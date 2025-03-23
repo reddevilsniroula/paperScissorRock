@@ -1,0 +1,149 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    color: #f4a261;
+}
+
+/* Choice Buttons */
+.choice {
+    margin-top: 20px;
+}
+
+.choices {
+    font-size: 18px;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.choices:nth-child(1) {
+    background-color: #2a9d8f;
+}
+.choices:nth-child(2) {
+    background-color: #e76f51;
+}
+.choices:nth-child(3) {
+    background-color: #f4a261;
+}
+
+.choices:hover {
+    opacity: 0.8;
+}
+
+/* Scoreboard */
+.scoreboard {
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Result Box */
+.result {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: #9bdffa;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Play Again Button */
+button.play-again {
+    background: #e76f51;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Play Again Button */
+.result button {
+    background-color: #fb3737; /* Green */
+    color: white;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result button:hover {
+    background-color: #b90505;
+    transform: scale(1.1);
+}
+
+
+/* Win Animation */
+.win {
+    color: green;
+    animation: bounce 0.5s ease-in-out;
+}
+
+/* Lose Animation */
+.lose {
+    color: red;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Draw Animation */
+.draw {
+    color: gray;
+    animation: pulse 0.5s ease-in-out;
+}
+/* Keyframe Animations */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+ 
